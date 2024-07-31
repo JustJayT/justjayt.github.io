@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header.hero {
+    background-image: url('https://cdn.b12.io/media/841291bc-9736-11e7-b50a-0242ac110002-cards-166440.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.about, .play {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-container {
+    text-align: center;
+}
+
+#betAmount {
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+footer.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
