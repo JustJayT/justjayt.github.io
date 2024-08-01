@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Applight Template By W3 Template</title>
+<title>StudyCal</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 <link rel="stylesheet" href="css/animate.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -34,14 +34,14 @@
 <!-- End Navbar --> 
 <!-------Banner Start------->
 <section class="banner" data-scroll-index='0'>
-  <div class="banner-overlay">
+  <div class="banner-overlay" style="margin-bottom: 3rem;">
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-12">
           <div class="banner-text">
-            <h2 class="white">The new way of organizing</h2>
-            <h6 class="white">This awesome app was designed by <a href="http://w3Template.com" target="_blank" rel="dofollow" class="weblink">JOSHUA AHAHHA
-            </a>.</h6>
+            <h2 class="white">Redefining productivity</h2>
+            <h6 class="white">Designed by students, for students. Look out college, here we come.
+            </a></h6>
             <p class="banner-text white">StudyCal offers a new, innovative way to organize and keep track of your tasks. At home, at work, on the way to school, StudyCal will help you plan out your day, so you can be as productive as possible without the hassle. Geared towards students, StudyCal shows internship opportunities, work offers, study halls and clubs near you, so you can be your most productive self.
             </p>
             <ul>
@@ -50,7 +50,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12"> <img class="mainlogo" src="images/Nobg.png" class="img-fluid wow fadeInUp"/> </div>
+        <div class="col-md-4 col-sm-12"> <img class="mainlogo" src="images/icon.png" class="img-fluid wow fadeInUp"/> </div>
       </div>
     </div>
   </div>
@@ -73,8 +73,8 @@
           <div class="row">
             <div class="col-md-4">
               <div class="icon-box wow fadeInUp" data-wow-delay="0.2s"> <i class="fa fa-life-ring" aria-hidden="true"></i>
-                <h5>Support</h5>
-                <p>Our devoted team of developers want to help you! We're available 24/7, and we can answer any question you have.</p>
+                <h5>Activites</h5>
+                <p>StudyCal pulls from thousands of datacenters to find the right internship, activity or club for you. Don't worry, we'll find something you enjoy.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -107,7 +107,7 @@
       <div class="video-popup">
         <div class="video-src">
           <div class="iframe-src">
-            <iframe src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/QaysZ2eMCmk?si=kj8VypAq1LKdJCro";showinfo=0 allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -115,7 +115,159 @@
   </div>
 </section>
 <!-------Video End-------> 
+<!-------Calendar Start -->
 
+<svg style="position: absolute; width: 0; height: 0; display: none;">
+  <symbol id="icon-arrow" viewBox="0 0 96 96">
+    <title>Arrow</title>
+    <path d="M39.66,13.34A8,8,0,0,0,28.34,24.66L51.69,48,28.34,71.34A8,8,0,0,0,39.66,82.66l29-29a8,8,0,0,0,0-11.31Z"/>
+  </symbol>
+</svg>
+
+<div class="wrapper">
+  <h1>Calendar</h1>
+  <div class="sticky-header">
+    <span>Calendar</span>
+  </div>
+  <div class="table">
+    <div class="headers">
+      <div class="buttons">
+        <button class="btn-left">
+          <svg><use xlink:href="#icon-arrow"></use></svg>
+        </button>
+        <button class="btn-right">
+          <svg><use xlink:href="#icon-arrow"></use></svg>
+        </button>
+      </div>
+      <div class="scroller syncscroll" name="myElements">
+        <div class="track time">
+          <div class="heading">Time</div>
+        </div>
+        <div class="track">
+          <div class="heading">Monday</div>
+        </div>
+        <div class="track">
+          <div class="heading">Tuesday</div>
+        </div>
+        <div class="track">
+          <div class="heading">Wednesday</div>
+        </div>
+        <div class="track">
+          <div class="heading">Thursday</div>
+        </div>
+      </div>
+    </div>
+    <div class="tracks syncscroll" name="myElements">
+      <div class="track time">
+        <div class="entry">
+          <time>09.00</time>
+        </div>
+        <div class="entry">
+          <time>10.00</time>
+        </div>
+        <div class="entry">
+          <time>11.00</time>
+        </div>
+        <div class="entry">
+          <time>12.00</time>
+        </div>
+        <div class="entry">
+          <time>13.00</time>
+        </div>
+      </div>
+      <div class="track yellow">
+        <div id="busy" class="entry">
+          <div class="details">
+            <h3 class="caltitle">Schedule too busy?</h3>
+            <p>StudyCal can handle it.</p>
+          </div>
+        </div>
+        <div class="entry double">
+          <div class="greg details">
+            <image id="pointer" src="images/pointer.png"></image>
+            <h3 class="caltitle">Meet up with Greg</h3>
+            <p>Go to that burger shop for lunch.</p>
+            <p>Don't forget to bring the papers!</p>
+          </div>
+        </div>
+        <div id="grandma" class="entry">
+          <div class="details">
+            <h3 class="caltitle">Bring grandma some groceries</h3>
+          </div>
+        </div>
+        <div id="recall" class="entry">
+          <div class="details">
+            <h3 class="caltitle">Attend financial recall</h3>
+            <p>Notify Jayne, carpooling.</p>
+          </div>
+        </div>
+      </div>
+      <div class="track turq">
+        <div class="entry">
+        </div>
+        <div class="entry">
+          <div class="details">
+            <h3 class="caltitle">Go to origami class</h3>
+            <p>Don't forget the 4x4 paper!</p>
+          </div>
+        </div>
+        <div id="bettergreg" class="entry">
+          <div class="details">
+            <h3 class="caltitle">Meet up with Greg</h3>
+            <p>Go to that burger shop for lunch.</p>
+            <p>Don't forget to bring the papers!</p>
+          </div>
+        </div>
+        <div id="greggone" class="entry">
+        </div>
+        <div class="entry">
+          <div class="details">
+            <h3 class="caltitle">Cook out with the family!</h3>
+            <p>Bringing: Steak, Bread, Oats.</p>
+          </div>
+        </div>
+      </div>
+      <div class="track blue">
+
+        <div class="entry">
+        </div>
+        <div class="entry">
+          <div class="details">
+            <h3 class="caltitle">Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="entry double">
+          <div class="details">
+            <h3 class="caltitle">Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="entry">
+        </div>
+      </div>
+      <div class="track green">
+        <div class="entry treble">
+          <div class="details">
+            <h3 class="caltitle">Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, omnis voluptas?</p>
+          </div>
+        </div>
+        <div class="entry">
+        </div>
+        <div class="entry">
+          <div class="details">
+            <h3 class="caltitle">Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div id="top-of-site-pixel-anchor"></div>
+
+<!----- Calender Ends -------->
 <!-------Features Start------->
 <section class="feature section-padding" data-scroll-index='2'>
   <div class="container">
@@ -152,7 +304,7 @@
               </div>
             </div>
             <div class="col-md-4 d-none d-md-block d-lg-block">
-              <div class="feature-mobile"> <img src="images/iphone-screen-with-shadow.png" class="img-fluid wow fadeInUp"/> </div>
+              <div class="feature-mobile"> <img src="images/cal-ex.png" class="img-fluid wow fadeInUp"/> </div>
             </div>
             <div class="col-md-4 col-sm-12">
               <div class="media single-feature wow fadeInUp" data-wow-delay="0.2s">
@@ -414,6 +566,28 @@
 <script src="js/scrollIt.min.js"></script> 
 <script src="js/wow.min.js"></script> 
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+    const movingElements = document.querySelectorAll('.greg');
+    const initialTop = -250;
+    const initialLeft = -250;
+    const finalTop = 1200;
+    const finalLeft = 1800;
+
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+        const scrollFraction = scrollTop / documentHeight;
+
+        const newTop = initialTop + (finalTop - initialTop) * scrollFraction;
+        const newLeft = initialLeft + (finalLeft - initialLeft) * scrollFraction;
+
+        movingElements.forEach(element => {
+            element.style.top = `${newTop}px`;
+            element.style.left = `${newLeft}px`;
+        });
+    });
+});
 	wow = new WOW();
 	wow.init();
 $(document).ready(function(e) {
