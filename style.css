@@ -767,7 +767,7 @@ h3 {
     height: 20% !important;
     top: 50px; /* Initial position */
     left: 50px;
-    transition: top 0.1s ease, left 0.1s ease;
+    transition: top 0.3s ease, left 0.3s ease;
     }
   .caltitle {
     font-size: 12px;
