@@ -1,7 +1,4 @@
-* {
-	padding:0;
-	margin:0;
-}
+
 body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
@@ -672,6 +669,7 @@ input {
 	transform: scale(0.75) !important;
 	-webkit-transform: scale(0.75) !important;
 }
+}
 .banner-text {
 	padding-right: 0px;
 	margin: 10px 0px 0px;
@@ -758,11 +756,22 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
+
   #busy:hover ~ #greg {
     opacity: 0;
     height: 20%;
   }
 
+:root {
+    --body-bg: #FDFDFD;
+    --thead-bg: #F7F9FB;
+    --thead-color: hsl(210, 5%, 40%);
+    --bd-color: #ebebeb;
+    --time-color: hsl(210, 5%, 70%);
+    
+    --time-width: 75px;
+    --sticky-height: 40px;
+  }
     .greg {
     transform: rotate(-30deg);
     position: absolute;
@@ -1051,6 +1060,4 @@ h3 {
     .track:not(.time) {
       flex: 1 0 calc(50% + 7px);
     }
-  }
-
 }
