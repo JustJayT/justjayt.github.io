@@ -758,8 +758,6 @@ h3 {
 .footer-copy p {
 	font-size: 10px;
 }
-
-}
   #busy:hover ~ #greg {
     opacity: 0;
     height: 20%;
@@ -1054,3 +1052,5 @@ h3 {
       flex: 1 0 calc(50% + 7px);
     }
   }
+
+}
