@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="floating-circles-container">
+                <div class="circle circle1">
+                    <img src="{{ url_for('static', filename='fallen.png') }}" alt="Picture 1">
+                </div>
+                <div class="circle circle2">
+                    <img src="{{ url_for('static', filename='profilepoc.png') }}" alt="Picture 2">
+                </div>
+                <div class="circle circle3">
+                    <img src="{{ url_for('static', filename='worker.png') }}" alt="Picture 3">
+                </div>
+            </div>
+            <div class="intro">
+                <h1>Hello, I'm <span class="highlight">Joshua Tom</span></h1>
+                <p>Researcher at Arizona State's ARC Lab and AI enthusiast!</p>
+                <p>Connect with me! <br> joshua.tom.v9@gmail.com </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/joshua-tom-5929b1290/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/JustJayT" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+
+    <main>
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-sections">
+                    <div class="about-item">
+                        <h3>My Education</h3>
+                        <p>I graduated from Lincoln Preparatory Academy in 2024. I'm now a freshman at Arizona State University in Computer Systems Engineering!</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>My Passions</h3>
+                        <p>I am deeply passionate about exploring cutting-edge technology, including AI trustworthiness, sustainable computing, and accesibility-oriented robotics.</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>Accomplishments</h3>
+                        <p>Flinn Finalist in the 2024 Cohort! National Hispanic Scholar. Forgot to add salt to my empanadas... 3 times. <br> Proudly a part of ARC Lab with Professor Zhou at ASU!</p>
+                    </div>
+                    <div class="about-item">
+                        <h3>My Goals</h3>
+                        <p>In the near future, I want to publish a paper on Large Language Models and conduct valuable research that can hopefully make an impact in the world of AI innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="project-list">
+                    <div class="project">
+                        <div class="project-text">
+                            <h3>Developing LLM Bias Metric @ ARC Lab w/ FURI | Current </h3>
+                            <p>I'm working with Professor Ben Zhou and his students to identify a problem with Large Language Models' reasoning and bias issues and attempting to create a metric to determine the reliability of an LLM's response.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='ARC.png') }}" alt="KodaCo Auditor">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-text">
+                            <h3>1800's Trained AI Model | 2025</h3>
+                            <p> I had a blast learning to build an LLM from scratch. From the attention blocks, transformers, tokenizers, and data-loaders, I learned a ton. I decided to train a model on around 1.7m tokens of 1800's text. It turned out decently well, just a bit too much memorizing.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='AI.png') }}" alt="KodaCo Auditor">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-text">
+                            <h3>KodaCo Auditor | 2024</h3>
+                            <p>I built a medical auditor for KodaCo. It uses OpenAI's API to read through audit logs of patients and ensure proper patient care. It uses carefully crafted prompts developed alongside medical professionals to ensure the highest levels of patient safety.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='KodaCo.png') }}" alt="KodaCo Auditor">
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-text">
+                            <h3>WizardTyper | 2024</h3>
+                            <p>A fun project that had me working as a full stack developer. I created the website from scratch, including all the frontend and backend functionality. It uses Python, JavaScript, HTML, CSS, and a framework through Flask, SQLAlchemy, and Bootstrap.</p>
+                        </div>
+                        <div class="project-image">
+                            <img src="{{ url_for('static', filename='1722379790024.jpg') }}" alt="WizardTyper">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
