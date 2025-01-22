@@ -5,7 +5,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -24,13 +24,13 @@
         <div class="container hero-content">
             <div class="floating-circles-container">
                 <div class="circle circle1">
-                    <img src="{{ url_for('static', filename='fallen.png') }}" alt="Picture 1">
+                    <img src="static/fallen.png" alt="Picture 1">
                 </div>
                 <div class="circle circle2">
-                    <img src="{{ url_for('static', filename='profilepoc.png') }}" alt="Picture 2">
+                    <img src="static/profilepoc.png" alt="Picture 2">
                 </div>
                 <div class="circle circle3">
-                    <img src="{{ url_for('static', filename='worker.png') }}" alt="Picture 3">
+                    <img src="static/worker.png" alt="Picture 3">
                 </div>
             </div>
             <div class="intro">
@@ -87,7 +87,7 @@
                             <p>I'm working with Professor Ben Zhou and his students to identify a problem with Large Language Models' reasoning and bias issues and attempting to create a metric to determine the reliability of an LLM's response.</p>
                         </div>
                         <div class="project-image">
-                            <img src="{{ url_for('static', filename='ARC.png') }}" alt="KodaCo Auditor">
+                            <img src="static/ARC.png" alt="KodaCo Auditor">
                         </div>
                     </div>
                     <div class="project">
@@ -96,7 +96,7 @@
                             <p> I had a blast learning to build an LLM from scratch. From the attention blocks, transformers, tokenizers, and data-loaders, I learned a ton. I decided to train a model on around 1.7m tokens of 1800's text. It turned out decently well, just a bit too much memorizing.</p>
                         </div>
                         <div class="project-image">
-                            <img src="{{ url_for('static', filename='AI.png') }}" alt="KodaCo Auditor">
+                            <img src="static/AI.png" alt="KodaCo Auditor">
                         </div>
                     </div>
                     <div class="project">
@@ -105,7 +105,7 @@
                             <p>I built a medical auditor for KodaCo. It uses OpenAI's API to read through audit logs of patients and ensure proper patient care. It uses carefully crafted prompts developed alongside medical professionals to ensure the highest levels of patient safety.</p>
                         </div>
                         <div class="project-image">
-                            <img src="{{ url_for('static', filename='KodaCo.png') }}" alt="KodaCo Auditor">
+                            <img src="static/KodaCo.png" alt="KodaCo Auditor">
                         </div>
                     </div>
                     <div class="project">
@@ -114,7 +114,7 @@
                             <p>A fun project that had me working as a full stack developer. I created the website from scratch, including all the frontend and backend functionality. It uses Python, JavaScript, HTML, CSS, and a framework through Flask, SQLAlchemy, and Bootstrap.</p>
                         </div>
                         <div class="project-image">
-                            <img src="{{ url_for('static', filename='1722379790024.jpg') }}" alt="WizardTyper">
+                            <img src="static/1722379790024.jpg" alt="WizardTyper">
                         </div>
                     </div>
 
